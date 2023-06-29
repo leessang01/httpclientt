@@ -26,13 +26,13 @@ public class Main {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent()));
         String inputLine;
-        StringBuffer response = new StringBuffer();
+        StringBuilder response = new StringBuilder();
         while((inputLine = reader.readLine()) != null) {
             response.append(inputLine);
         }
         reader.close();
 
-        System.out.println(response.toString());
+        System.out.println(response);
 
         httpClient.close();
     }
