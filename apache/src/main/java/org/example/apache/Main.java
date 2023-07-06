@@ -1,4 +1,4 @@
-package org.example;
+package org.example.apache;
 
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
